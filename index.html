@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+    <section id="user-login-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div id="greeting-area" class="col-md-8 text-center">
+                    <h1 style="color: aliceblue;"><b>Hello!</b> Sir</h1>
+                    <h1 style="color: aliceblue;"><b>Welcome to our Shop!</b></h1>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div id="form-area" class="col-md-8 text-center">
+                    <div class="justify-content-md-center ">
+                        <div class="row form-floating mb-3">
+                            <input type="text" class="form-control" id="user-name" placeholder="Enter your name">
+                            <label for="floatingInput">Enter Your Name</label>
+                        </div>
+                        <div class="row form-floating">
+                            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                            <label for="floatingPassword">Password</label>
+                        </div>
+                        <div style="margin: 40px;">
+                            <button id="signin-btn" type="submit" class="btn btn-success btn-lg" style="margin-right: 80px;">Sign In</button>
+                            <button type="submit" class="btn btn-warning btn-lg">Signup</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="user-shopping-area" style="background-color: #d2c9ff;">
+        <div class="container">
+            <div id="greeting-area" class="text-center">
+                <h2>Hello! <b><span id="user-given-name">Afnan</span></b></h2>
+                <h4>I hope you will enjoy your shopping</h4>
+            </div>
+            <div class="h-100 h-custom">
+                <div class="container py-5 h-100">
+                  <div class="row d-flex justify-content-center align-items-center h-100">
+                    <div class="col-12">
+                      <div class="card card-registration card-registration-2" style="border-radius: 15px;">
+                        <div class="card-body p-0">
+                          <div class="row g-0">
+                            <div class="col-lg-8">
+                              <div class="p-5">
+                                <div class="d-flex justify-content-between align-items-center mb-5">
+                                  <h1 class="fw-bold mb-0 text-black">Shopping Cart</h1>
+                                  <h6 class="mb-0 text-muted">3 items</h6>
+                                </div>
+                                <hr class="my-4">
+              
+                                <div class="row mb-4 d-flex justify-content-between align-items-center">
+                                  <div class="col-md-2 col-lg-2 col-xl-2">
+                                    <img
+                                      src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-shopping-carts/img5.webp"
+                                      class="img-fluid rounded-3" alt="Cotton T-shirt">
+                                  </div>
+                                  <div class="col-md-3 col-lg-3 col-xl-3">
+                                    <h6 class="text-muted">Shirt 1</h6>
+                                    <h6 class="text-black mb-0">Cotton T-shirt</h6>
+                                  </div>
+                                  <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
+                                    <button id="price-down-btn" class="btn btn-link px-2"
+                                      onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                                      <i class="fas fa-minus"></i>
+                                    </button>
+              
+                                    <input id="input-1" min="0" name="quantity" value="1" type="number"
+                                      class="form-control form-control-sm" />
+              
+                                    <button id="price-up-btn" class="btn btn-link px-2"
+                                      onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                                      <i class="fas fa-plus"></i>
+                                    </button>
+                                  </div>
+                                  <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
+                                    <h6 class="mb-0">৳ <span id="first-item-price">500</span></h6>
+                                  </div>
+                                  <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                                    <a href="#!" class="text-muted"><i class="fas fa-times"></i></a>
+                                  </div>
+                                </div>
+              
+                                <hr class="my-4">
+              
+                                <div class="row mb-4 d-flex justify-content-between align-items-center">
+                                  <div class="col-md-2 col-lg-2 col-xl-2">
+                                    <img
+                                      src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-shopping-carts/img6.webp"
+                                      class="img-fluid rounded-3" alt="Cotton T-shirt">
+                                  </div>
+                                  <div class="col-md-3 col-lg-3 col-xl-3">
+                                    <h6 class="text-muted">Shirt 2</h6>
+                                    <h6 class="text-black mb-0">Cotton T-shirt</h6>
+                                  </div>
+                                  <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
+                                    <button id="price-down-btn-2" class="btn btn-link px-2"
+                                      onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                                      <i class="fas fa-minus"></i>
+                                    </button>
+              
+                                    <input id="input-2" min="0" name="quantity" value="1" type="number"
+                                      class="form-control form-control-sm" />
+              
+                                    <button id="price-up-btn-2" class="btn btn-link px-2"
+                                      onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                                      <i class="fas fa-plus"></i>
+                                    </button>
+                                  </div>
+                                  <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
+                                    <h6 class="mb-0">৳ <span id="second-item-price">400</span></h6>
+                                  </div>
+                                  <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                                    <a href="#!" class="text-muted"><i class="fas fa-times"></i></a>
+                                  </div>
+                                </div>
+              
+                                <hr class="my-4">
+              
+                                <div class="row mb-4 d-flex justify-content-between align-items-center">
+                                  <div class="col-md-2 col-lg-2 col-xl-2">
+                                    <img
+                                      src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-shopping-carts/img7.webp"
+                                      class="img-fluid rounded-3" alt="Cotton T-shirt">
+                                  </div>
+                                  <div class="col-md-3 col-lg-3 col-xl-3">
+                                    <h6 class="text-muted">Shirt 3</h6>
+                                    <h6 class="text-black mb-0">Cotton T-shirt</h6>
+                                  </div>
+                                  <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
+                                    <button id="price-down-btn-3" class="btn btn-link px-2"
+                                      onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                                      <i class="fas fa-minus"></i>
+                                    </button>
+              
+                                    <input id="input-3" min="0" name="quantity" value="1" type="number"
+                                      class="form-control form-control-sm" />
+              
+                                    <button id="price-up-btn-3" class="btn btn-link px-2"
+                                      onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                                      <i class="fas fa-plus"></i>
+                                    </button>
+                                  </div>
+                                  <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
+                                    <h6 class="mb-0">৳ <span id="third-item-price">300</span></h6>
+                                  </div>
+                                  <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                                    <a href="#!" class="text-muted"><i class="fas fa-times"></i></a>
+                                  </div>
+                                </div>
+              
+                                <hr class="my-4">
+              
+                                <div class="pt-5">
+                                  <h6 class="mb-0"><a href="#!" class="text-body"><i
+                                    class="fas fa-long-arrow-alt-left me-2"></i>Back to shop</a></h6>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-lg-4 bg-grey">
+                              <div class="p-5">
+                                <h3 class="fw-bold mb-5 mt-2 pt-1">Summary</h3>
+                                <hr class="my-4">
+              
+                                <div class="d-flex justify-content-between mb-4">
+                                  <h5 class="text-uppercase">items 3</h5>
+                                  <h5>৳ <span id="total-summary">1200</span></h5>
+                                </div>
+              
+                                <h5 class="text-uppercase mb-3">Shipping</h5>
+              
+                                <div class="mb-4 pb-2">
+                                  <select class="select">
+                                    <option value="1">Standard-Delivery- ৳ <span id="">80</span></option>
+                                    <option value="2">Express-Delivery- ৳ <span id="">150</span></option>
+                                  </select>
+                                </div>
+              
+                                <h5 class="text-uppercase mb-3">Give code</h5>
+              
+                                <div class="mb-5">
+                                  <div class="form-outline">
+                                    <input type="text" id="form3Examplea2" class="form-control form-control-lg" />
+                                    <label class="form-label" for="form3Examplea2">Enter your code</label>
+                                  </div>
+                                </div>
+              
+                                <hr class="my-4">
+              
+                                <div class="d-flex justify-content-between mb-5">
+                                  <h5 class="text-uppercase">Total price</h5>
+                                  <h5>৳ <span id="total-product-summary">1200</span></h5>
+                                </div>
+              
+                                <button type="button" class="btn btn-dark btn-block btn-lg"
+                                  data-mdb-ripple-color="dark">Check Out</button>
+              
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </section>
+
+
+
+    <script>
+        //Signin button event listner
+        const loginBtnClicked = document.getElementById('signin-btn');
+        loginBtnClicked.addEventListener('click', function(){
+            const UserLoginArea = document.getElementById('user-login-area');
+            UserLoginArea.style.display = 'none';
+
+            const userShoppingArea = document.getElementById('user-shopping-area');
+            userShoppingArea.style.display = 'block';
+
+            const userName = document.getElementById('user-name').value;
+            document.getElementById('user-given-name').innerText = userName;
+        })
+
+
+        function allProductPrice(){
+          
+        }
+
+
+        //first item price down event listner
+        const firstItemquantityDown = document.getElementById('price-down-btn');
+        firstItemquantityDown.addEventListener('click', function(){
+            const InputField = document.getElementById('input-1').value;
+            firstItem(InputField);
+
+            //Product Item Summary
+            const totalSummary = document.getElementById('total-summary').innerText;
+            const totalSummaryNumber = parseFloat(totalSummary);
+            const totalSummaryPrice = totalSummaryNumber - 500;
+            document.getElementById('total-summary').innerText = totalSummaryPrice;
+
+            document.getElementById('total-product-summary').innerText = totalSummaryPrice;
+        })
+
+        //first item price up event listner
+        const firstItemquantityUp = document.getElementById('price-up-btn');
+        firstItemquantityUp.addEventListener('click', function(){
+            const InputField = document.getElementById('input-1').value;
+            firstItem(InputField);
+
+            //Product Item Summary
+            const totalSummary = document.getElementById('total-summary').innerText;
+            const totalSummaryNumber = parseFloat(totalSummary);
+            const totalSummaryPrice = totalSummaryNumber + 500;
+            document.getElementById('total-summary').innerText = totalSummaryPrice;
+
+            document.getElementById('total-product-summary').innerText = totalSummaryPrice;
+        })
+
+        //second item price down event listner
+        const secondItemquantityDown = document.getElementById('price-down-btn-2');
+        secondItemquantityDown.addEventListener('click', function(){
+            const InputFieldTwo = document.getElementById('input-2').value;
+            secondItem(InputFieldTwo);
+
+            //Product Item Summary
+            const totalSummary = document.getElementById('total-summary').innerText;
+            const totalSummaryNumber = parseFloat(totalSummary);
+            const totalSummaryPrice = totalSummaryNumber - 400;
+            document.getElementById('total-summary').innerText = totalSummaryPrice;
+
+            document.getElementById('total-product-summary').innerText = totalSummaryPrice;
+        })
+
+        //second item price up event listner
+        const secondItemquantityUp = document.getElementById('price-up-btn-2');
+        secondItemquantityUp.addEventListener('click', function(){
+            const InputFieldTwo = document.getElementById('input-2').value;
+            secondItem(InputFieldTwo);
+
+            //Product Item Summary
+            const totalSummary = document.getElementById('total-summary').innerText;
+            const totalSummaryNumber = parseFloat(totalSummary);
+            const totalSummaryPrice = totalSummaryNumber + 400;
+            document.getElementById('total-summary').innerText = totalSummaryPrice;
+
+            document.getElementById('total-product-summary').innerText = totalSummaryPrice;
+        })
+
+        //third item price down event listner
+        const thirdItemQuantityDown = document.getElementById('price-down-btn-3');
+        thirdItemQuantityDown.addEventListener('click', function(){
+            const inputFieldThree = document.getElementById('input-3').value;
+            thirdItem(inputFieldThree);
+
+            //Product Item Summary
+            const totalSummary = document.getElementById('total-summary').innerText;
+            const totalSummaryNumber = parseFloat(totalSummary);
+            const totalSummaryPrice = totalSummaryNumber - 300;
+            document.getElementById('total-summary').innerText = totalSummaryPrice;
+
+            document.getElementById('total-product-summary').innerText = totalSummaryPrice;
+        })
+
+        //third item price up event listner
+        const thirdItemQuantityUp = document.getElementById('price-up-btn-3');
+        thirdItemQuantityUp.addEventListener('click', function(){
+            const InputFieldThree = document.getElementById('input-3').value;
+            thirdItem(InputFieldThree);
+
+            //Product Item Summary
+            const totalSummary = document.getElementById('total-summary').innerText;
+            const totalSummaryNumber = parseFloat(totalSummary);
+            const totalSummaryPrice = totalSummaryNumber + 300;
+            document.getElementById('total-summary').innerText = totalSummaryPrice;
+
+            document.getElementById('total-product-summary').innerText = totalSummaryPrice;
+        })
+
+
+
+        function firstItem (input){
+          const InputFieldNumber =parseFloat(input);
+          const totalPrice = 500 * InputFieldNumber;
+          document.getElementById('first-item-price').innerText = totalPrice;
+        }
+
+        function secondItem (input){
+          const InputFieldNumber =parseFloat(input);
+          const totalPrice = 400 * InputFieldNumber;
+          document.getElementById('second-item-price').innerText = totalPrice;
+        }
+
+        function thirdItem (input){
+          const InputFieldNumber =parseFloat(input);
+          const totalPrice = 300 * InputFieldNumber;
+          document.getElementById('third-item-price').innerText = totalPrice;
+        }
+
+    </script>
+</body>
+</html>
